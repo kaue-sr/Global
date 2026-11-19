@@ -1,0 +1,326 @@
+{
+  "periodo": [
+    "madrugada",
+    "manhã",
+    "tarde",
+    "noite"
+  ],
+  "dia_semana": [
+    "segunda",
+    "terça",
+    "quarta",
+    "quinta",
+    "sexta",
+    "sábado",
+    "domingo"
+  ],
+  "tipo_local": [
+    "Area não Ocupada",
+    "Centro Comercial/Empresarial",
+    "Comércio e Serviços",
+    "Condomínio Comercial",
+    "Condomínio Residencial",
+    "Entidade Assistencial",
+    "Escritório",
+    "Estabelecimento Bancário",
+    "Estabelecimento Industrial",
+    "Estabelecimento de Ensino",
+    "Estacionamento/Garagem",
+    "Favela",
+    "Hospedagem",
+    "Internet",
+    "Lazer e Recreação",
+    "Local Clandestino/Ilegal",
+    "Outros",
+    "Repartição Pública",
+    "Residência",
+    "Restaurante e Afins",
+    "Rodovia/Estrada",
+    "Saúde",
+    "Serviços e Bens Públicos",
+    "Shopping Center",
+    "Templo e Afins",
+    "Terminal/Estação",
+    "Via Pública"
+  ],
+  "subtipo_por_tipo": {
+    "Area não Ocupada": [
+      "Obra/Construção",
+      "Terreno Baldio"
+    ],
+    "Centro Comercial/Empresarial": [
+      "Café/Lanchonete",
+      "Corredor",
+      "Estacionamento",
+      "Sala de Reuniões/Convenções",
+      "Área Comum"
+    ],
+    "Comércio e Serviços": [
+      "Armazém/Empório",
+      "Artigos e Equipamentos para Indústria/Comércio",
+      "Atacadista",
+      "Autopeças",
+      "Boutique",
+      "Distribuidora",
+      "Estacionamento Particular",
+      "Farmácia/Drogaria",
+      "Informática e Suprimentos",
+      "Lavanderia",
+      "Locadora",
+      "Magazine",
+      "Material de Construção",
+      "Mercado",
+      "Móveis",
+      "Oficina",
+      "Padaria/Confeitaria",
+      "Posto de Gasolina",
+      "Roupas",
+      "Roupas Femininas",
+      "Salão de Beleza/Estética",
+      "Transportadora"
+    ],
+    "Condomínio Comercial": [
+      "Escritórios",
+      "Lojas"
+    ],
+    "Condomínio Residencial": [
+      "Apartamentos",
+      "Casas"
+    ],
+    "Entidade Assistencial": [
+      "Albergue",
+      "Outros"
+    ],
+    "Escritório": [
+      "Advocacia",
+      "Outros"
+    ],
+    "Estabelecimento Bancário": [
+      "Agência",
+      "Defronte Estabelecimento Bancário"
+    ],
+    "Estabelecimento Industrial": [
+      "Metalúrgica"
+    ],
+    "Estabelecimento de Ensino": [
+      "Berçário/Creche",
+      "Curso Preparatório/Outros",
+      "Ensino Fundamental",
+      "Ensino Médio"
+    ],
+    "Estacionamento/Garagem": [
+      "Estacionamento com vigilância",
+      "Estacionamento particular",
+      "Estacionamento público",
+      "Garagem coletiva de prédio",
+      "Garagem ou abrigo de residência"
+    ],
+    "Favela": [
+      "Bar",
+      "Viela"
+    ],
+    "Hospedagem": [
+      "Hotel"
+    ],
+    "Internet": [
+      "Pela Internet"
+    ],
+    "Lazer e Recreação": [
+      "Biblioteca",
+      "Bingo/Vídeo Bingo",
+      "Boate/Danceteria",
+      "Casa Noturna/Outros",
+      "Casa de Show/Espetáculo",
+      "Clube/Centro Esportivo",
+      "Estádio/Ginásio",
+      "Galeria",
+      "Parque de Diversão/Temático/Zôo",
+      "Parque/Bosque/Horto/Reserva",
+      "Pavilhão de Exposição",
+      "Salão de Festas/Buffet"
+    ],
+    "Local Clandestino/Ilegal": [
+      "Casa de Prostituição",
+      "Fábrica/Indústria"
+    ],
+    "Outros": [
+      "Outros"
+    ],
+    "Repartição Pública": [
+      "Delegacia",
+      "Prefeitura Municipal"
+    ],
+    "Residência": [
+      "Apartamento",
+      "Casa",
+      "Área Comum"
+    ],
+    "Restaurante e Afins": [
+      "Bar/Botequim",
+      "Doceria/Bomboniere/Sorveteria",
+      "Lanchonete/Pastelaria/Pizzaria",
+      "Outros",
+      "Padaria/Café",
+      "Restaurante"
+    ],
+    "Rodovia/Estrada": [
+      "Acostamento",
+      "Interior de Transporte Coletivo",
+      "Interior de Veículo Particular",
+      "Transeunte"
+    ],
+    "Saúde": [
+      "Clínica",
+      "Hospital",
+      "Posto de Saúde"
+    ],
+    "Serviços e Bens Públicos": [
+      "Agência da ECT",
+      "Cartório",
+      "Mata/Floresta"
+    ],
+    "Shopping Center": [
+      "Estacionamento",
+      "Lanchonete",
+      "Lojas",
+      "Mercado",
+      "Área Comum"
+    ],
+    "Templo e Afins": [
+      "Igreja"
+    ],
+    "Terminal/Estação": [
+      "Aeroportuário",
+      "Ferroviário",
+      "Metroviário e Ferroviário Metropolitano",
+      "Ponto de Táxi",
+      "Rodoviário",
+      "Ônibus/Lotação/Trolebus"
+    ],
+    "Via Pública": [
+      "Ciclofaixa",
+      "De Frente a Residência da Vítima",
+      "Feira Livre",
+      "Interior de Transporte Coletivo",
+      "Interior de Veículo Particular",
+      "Interior de Veículo de Carga",
+      "Passarela",
+      "Praça",
+      "Semáforo",
+      "Transeunte",
+      "Túnel/Viaduto/Ponte",
+      "Veículo em movimento",
+      "Via Pública"
+    ]
+  },
+  "bairros": [
+    "ALTO DE PINHEIROS",
+    "ARICANDUVA",
+    "ARTUR ALVIM",
+    "BARRA FUNDA",
+    "BELA VISTA",
+    "BELEM",
+    "BOM RETIRO",
+    "BRAS",
+    "BRASILANDIA",
+    "BRÁS",
+    "BUTANTA",
+    "BUTANTÃ",
+    "CACHOEIRINHA",
+    "CAMBUCI",
+    "CAMPO BELO",
+    "CAMPO GRANDE",
+    "CAMPO LIMPO",
+    "CAMPOS ELÍSEOS",
+    "CANGAIBA",
+    "CANINDÉ",
+    "CAPAO REDONDO",
+    "CASA VERDE",
+    "CENTRO",
+    "CENTRO HISTÓRICO DE SÃO PAULO",
+    "CERQUEIRA CÉSAR",
+    "CIDADE ADEMAR",
+    "CIDADE DUTRA",
+    "CIDADE LIDER",
+    "CIDADE TIRADENTES",
+    "CONSOLACAO",
+    "CONSOLAÇÃO",
+    "ERMELINO MATARAZZO",
+    "FREGUESIA DO O",
+    "GRAJAU",
+    "GUAIANASES",
+    "IGUATEMI",
+    "INTERLAGOS",
+    "IPIRANGA",
+    "ITAIM BIBI",
+    "ITAIM PAULISTA",
+    "ITAQUERA",
+    "JABAQUARA",
+    "JARAGUA",
+    "JARDIM ANGELA",
+    "JARDIM COLINA",
+    "JARDIM HELENA",
+    "JARDIM PAULISTA",
+    "JARDIM PAULISTANO",
+    "JARDIM SÃO LUÍS",
+    "JD SÃO LUIS",
+    "JOSE BONIFACIO",
+    "LAJEADO",
+    "LAPA",
+    "LIBERDADE",
+    "LIMAO",
+    "LUZ",
+    "MOEMA",
+    "MOOCA",
+    "MORUMBI",
+    "NÃO INFORMADO",
+    "PARELHEIROS",
+    "PARI",
+    "PARQUE ARTUR ALVIM",
+    "PARQUE DO CARMO",
+    "PEDREIRA",
+    "PENHA",
+    "PERDIZES",
+    "PERUS",
+    "PINHEIROS",
+    "PIRITUBA",
+    "RAPOSO TAVARES",
+    "REPUBLICA",
+    "REPÚBLICA",
+    "RIO PEQUENO",
+    "SACOMA",
+    "SANTA CECILIA",
+    "SANTANA",
+    "SANTO AMARO",
+    "SAO DOMINGOS",
+    "SAO LUCAS",
+    "SAO MATEUS",
+    "SAO MIGUEL",
+    "SAO RAFAEL",
+    "SAPOPEMBA",
+    "SAUDE",
+    "SE",
+    "SOCORRO",
+    "SÉ",
+    "TATUAPE",
+    "TATUAPÉ",
+    "TREMEMBE",
+    "TUCURUVI",
+    "VILA ANDRADE",
+    "VILA CAMPANELA",
+    "VILA CURUCA",
+    "VILA FORMOSA",
+    "VILA GUILHERME",
+    "VILA JACUI",
+    "VILA LEOPOLDINA",
+    "VILA MARIA",
+    "VILA MARIANA",
+    "VILA MATILDE",
+    "VILA MEDEIROS",
+    "VILA OLÍMPIA",
+    "VILA PRUDENTE",
+    "VILA SONIA",
+    "VÁRZEA DA BARRA FUNDA",
+    "ÁGUA BRANCA"
+  ]
+}

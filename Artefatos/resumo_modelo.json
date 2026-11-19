@@ -1,0 +1,22 @@
+{
+  "arquitetura": "A1",
+  "camadas": [
+    32
+  ],
+  "ativacao": "relu",
+  "dropout": 0.0,
+  "metricas_validacao": {
+    "loss": 0.5678,
+    "acuracia": 0.7023,
+    "precisao": 0.6147,
+    "recall": 0.5199,
+    "f1": 0.5633
+  },
+  "metricas_teste": {
+    "loss": 0.5508,
+    "acuracia": 0.7147,
+    "precisao": 0.6334,
+    "recall": 0.5384,
+    "f1": 0.582
+  }
+}
