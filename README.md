@@ -2,7 +2,7 @@
 **Classificação de ocorrências de subtração de celulares (Roubo x Furto) com MLP**
 
 - **Disciplina:** Aprendizado Profundo com Redes Neurais Convolucionais
-- **Aplicação Web Online:** [Acessar Sistema no Streamlit]((https://global-6pd2lwztfpzkvnfxh9nwkx.streamlit.app/))
+- **Aplicação Web Online:** [Acessar Sistema no Streamlit](https://global-6pd2lwztfpzkvnfxh9nwkx.streamlit.app/)
 
 ## Integrantes
 - Kaue Souza Rodrigues — RM 567716
