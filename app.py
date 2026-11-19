@@ -4,6 +4,10 @@ import pandas as pd
 import streamlit as st
 import tensorflow as tf
 import sklearn.compose._column_transformer as _ct
+import os
+import zipfile
+
+
 if not hasattr(_ct, "_RemainderColsList"):
     class _RemainderColsList(list):
         pass
@@ -210,12 +214,33 @@ div.stButton > button:hover {
 # ---------------------------------------------------------
 @st.cache_resource
 def carregar_artefatos():
-    modelo = tf.keras.models.load_model("artefatos/modelo_mlp.keras")
-    preprocessador = joblib.load("artefatos/preprocessador.joblib")
-    with open("artefatos/opcoes_formulario.json", "r", encoding="utf-8") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    artefatos_dir = os.path.join(base_dir, "artefatos")
+
+    preprocessador = joblib.load(os.path.join(artefatos_dir, "preprocessador.joblib"))
+    with open(os.path.join(artefatos_dir, "opcoes_formulario.json"), "r", encoding="utf-8") as f:
         opcoes = json.load(f)
-    with open("artefatos/resumo_modelo.json", "r", encoding="utf-8") as f:
+    with open(os.path.join(artefatos_dir, "resumo_modelo.json"), "r", encoding="utf-8") as f:
         resumo = json.load(f)
+
+    # Descobre o número exato de features de entrada a partir do pré-processador
+    n_features = len(preprocessador.get_feature_names_out())
+
+    # Reconstrói a arquitetura exatamente como foi treinada (evita erro de versão do Keras)
+    modelo = tf.keras.Sequential([tf.keras.layers.Input(shape=(n_features,))])
+    for n in resumo["camadas"]:
+        modelo.add(tf.keras.layers.Dense(n, activation=resumo["ativacao"]))
+        if resumo.get("dropout", 0.0) > 0:
+            modelo.add(tf.keras.layers.Dropout(resumo["dropout"]))
+    modelo.add(tf.keras.layers.Dense(1, activation="sigmoid"))
+
+    # Extrai e carrega os pesos direto de dentro do arquivo .keras (que é um .zip)
+    caminho_keras = os.path.join(artefatos_dir, "modelo_mlp.keras")
+    caminho_pesos = os.path.join(artefatos_dir, "model.weights.h5")
+    with zipfile.ZipFile(caminho_keras, "r") as z:
+        z.extract("model.weights.h5", artefatos_dir)
+    modelo.load_weights(caminho_pesos)
+
     return modelo, preprocessador, opcoes, resumo
 
 modelo, preprocessador, opcoes, resumo = carregar_artefatos()
